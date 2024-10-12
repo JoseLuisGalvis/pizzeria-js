@@ -226,7 +226,7 @@ body.dark-mode .toggle-button .moon-icon {
 }
 
 .hero-section {
-  background-image: url("/assets/images/fondo.jpeg");
+  background-image: url("../assets/images/fondo.jpeg");
   background-size: cover;
   background-position: center;
   height: 100vh;
