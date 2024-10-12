@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzería Don Remolo - Menú Online</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <nav
+      id="home"
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img id="logo" src="assets/images/logo.jpg" alt="Logo" class="me-2" />
+          <h4 class="text-white mb-0">Pizzería Don Remolo</h4>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#hero">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#menu"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Menú
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#menu_1">Pizzas</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#menu_2">Empanadas</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#menu_3">Bebidas</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#menu_4">Postres</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn btn-orange text-white" id="verPedido">
+          Ver Pedido
+        </button>
+        <button id="darkModeToggle" class="toggle-button m-2" aria-label="Toggle dark mode">
+          <i class="fas fa-sun sun-icon"></i>
+          <i class="fas fa-moon moon-icon"></i>
+        </button>
+        
+        
+    </nav>
+
+    <!-- Hero section -->
+    <section id="hero" class="hero-section section-vh-100">
+      <div class="container">
+        <div class="row align-items-center">
+          <div
+            class="col-md-6"
+            data-aos="zoom-in"
+            data-aos-duration="3000"
+            data-aos-delay="400"
+          >
+            <h2 class="title text-shadow">La Mejor Pizza</h2>
+            <h3 class="subtitle text-shadow">
+              ¡Haz que tu día sea estupendo con nuestras Pizzas Especiales!
+            </h3>
+            <p class="description text-shadow">
+              Bienvenido a nuestro paraíso de la Pizza, donde cada una cuenta
+              una historia y desata tu alegría.
+            </p>
+            <div class="buttons">
+              <a
+                href="#menu"
+                class="btn btn-orange text-white"
+                data-aos="zoom-in"
+                data-aos-duration="3000"
+                data-aos-delay="400"
+                >Ordena Ahora</a
+              >
+              <a
+                href="#contacto"
+                class="btn btn-outline-secondary"
+                data-aos="zoom-in"
+                data-aos-duration="3000"
+                data-aos-delay="400"
+                >Contáctanos</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- Puedes eliminar la imagen aquí si ya no la necesitas -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="about-section section-vh-100">
+      <div class="container">
+        <div class="row align-items-center">
+          <div
+            class="col-md-6"
+            data-aos="zoom-in"
+            data-aos-duration="3000"
+            data-aos-delay="400"
+          >
+            <img
+              src="assets/images/pizza.jpg"
+              alt="pizzeria"
+              class="img-fluid"
+            />
+          </div>
+          <div
+            class="col-md-6"
+            data-aos="zoom-in"
+            data-aos-duration="3000"
+            data-aos-delay="400"
+          >
+            <h2 class="section-title">Nosotros</h2>
+            <p class="text">
+              En Pizzeria Don Rémolo, nos enorgullecemos de ser un destino para
+              los amantes de la Pizza y la conversación amena. Nos dedicamos a
+              ofrecer una experiencia gastronómica excepcional en un ambiente
+              acogedor, donde los clientes pueden relajarse, descansar y
+              disfrutar de la calidad de nuestros platos.
+            </p>
+            <div class="social-link-list">
+              <a href="#" class="btn btn-outline-secondary me-2 fw-bold"
+                >Facebook</a
+              >
+              <a href="#" class="btn btn-outline-secondary me-2 fw-bold"
+                >Instagram</a
+              >
+              <a href="#" class="btn btn-outline-secondary fw-bold">Twitter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="menu_1" class="container mt-5">
+      <h2 id="menu-title" class="text-center mt-5 mb-5">Menú</h2>
+      <!-- Pizzas -->
+      <section
+        id="pizzas"
+        data-aos="zoom-in"
+        data-aos-duration="3000"
+        data-aos-delay="400"
+      >
+        <h2 class="mb-4">Pizzas</h2>
+        <div class="row d-flex align-items-stretch">
+          <div class="col-md-3 mb-4">
+            <div class="card menu-item">
+              <img
+                src="assets/images/margarita.png"
+                class="card-img-top"
+                alt="Pizza Margarita"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pizza Margarita</h5>
+                <p class="card-text">
+                  Deliciosa pizza con tomate, mozzarella y albahaca.
+                </p>
+                <p class="card-price"><strong>Precio: $10.99</strong></p>
+                <button
+                  class="btn btn-orange text-white agregar-al-pedido"
+                  data-nombre="Pizza Margherita"
+                  data-precio="10.99"
+                >
+                  Agregar al pedido
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card menu-item">
+              <img
+                src="assets/images/vegetariana.png"
+                class="card-img-top"
+                alt="Pizza Vegetariana"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pizza Vegetariana</h5>
+                <p class="card-text">
+                  Opción fresca y colorida, cargada de verduras como pimientos,
+                  champiñones, cebollas y aceitunas.
+                </p>
+                <p class="card-price"><strong>Precio: $10.99</strong></p>
+                <button
+                  class="btn btn-orange text-white agregar-al-pedido"
+                  data-nombre="Pizza Vegetariana"
+                  data-precio="10.99"
+                >
+                  Agregar al pedido
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card menu-item">
+              <img
+                src="assets/images/pepperoni.png"
+                class="card-img-top"
+                alt="Pizza Pepperoni"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pizza Pepperoni</h5>
+                <p class="card-text">
+                  pizza americana cubierta con rodajas de salami picante, que le
+                  da un toque crujiente y sabroso.
+                </p>
+                <p class="card-price"><strong>Precio: $10.99</strong></p>
+                <button
+                  class="btn btn-orange text-white agregar-al-pedido"
+                  data-nombre="Pizza Pepperoni"
+                  data-precio="10.99"
+                >
+                  Agregar al pedido
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card menu-item">
+              <img
+                src="assets/images/cuatro_quesos.png"
+                class="card-img-top"
+                alt="Pizza Cuatro Quesos"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pizza Cuatro Quesos</h5>
+                <p class="card-text">
+                  Combinación de quesos que incluye mozzarella, gorgonzola,
+                  parmesano y ricotta.
+                </p>
+                <p class="card-price"><strong>Precio: $10.99</strong></p>
+                <button
+                  class="btn btn-orange text-white agregar-al-pedido"
+                  data-nombre="Pizza Cuatro Quesos"
+                  data-precio="10.99"
+                >
+                  Agregar al pedido
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="menu_2" class="container mt-5">
+      <h2 id="menu-title" class="text-center mt-5 mb-5">Menú</h2>
+      <!-- Empanadas -->
+      <section
+        id="pizzas"
+        data-aos="zoom-in"
+        data-aos-duration="3000"
+        data-aos-delay="400"
+      >
+        <h2 class="mb-4">Empanadas</h2>
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <div class="card menu-item">
+              <img src="assets/images/emp-carne.png" alt="carne" id="emp-img" />
+              <div class="card-body">
+                <h5 class="card-title">Carne</h5>
+                <p class="card-text">Empanadas de Carne.</p>
+                <p class="card-price"><strong>Precio: $10.99</strong></p>
+                <button
+                  class="btn btn-orange text-white agregar-al-pedido"
+                  data-nombre="Carne"
+                  data-precio="10.99"
+                >
+                  Agregar al pedido
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card menu-item">
+              <img src="assets/images/emp-pollo.jpg" alt="pollo" id="emp-img" />
+              <div class="card-body">
+                <h5 class="card-title">Pollo</h5>
+                <p class="card-text">Empanadas de Pollo.</p>
+                <p class="card-price"><strong>Precio: $10.99</strong></p>
+                <button
+                  class="btn btn-orange text-white agregar-al-pedido"
+                  data-nombre="pollo"
+                  data-precio="10.99"
+                >
+                  Agregar al pedido
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card menu-item">
+              <img src="assets/images/emp-queso.jpg" alt="queso" id="emp-img" />
+              <div class="card-body">
+                <h5 class="card-title">Queso</h5>
+                <p class="card-text">Empanadas de Queso.</p>
+                <p class="card-price"><strong>Precio: $10.99</strong></p>
+                <button
+                  class="btn btn-orange text-white agregar-al-pedido"
+                  data-nombre="queso"
+                  data-precio="10.99"
+                >
+                  Agregar al pedido
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card menu-item">
+              <img
+                src="assets/images/emp-jamque.jpg"
+                alt="jamon y queso"
+                id="emp-img"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Jamon y Queso</h5>
+                <p class="card-text">Empanadas de Jamon y Queso.</p>
+                <p class="card-price"><strong>Precio: $10.99</strong></p>
+                <button
+                  class="btn btn-orange text-white agregar-al-pedido"
+                  data-nombre="jamon y queso"
+                  data-precio="10.99"
+                >
+                  Agregar al pedido
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="menu_3" class="container mt-5">
+      <h2 id="menu-title" class="text-center mt-5 mb-5">Menú</h2>
+      <!-- Bebidas -->
+      <section
+        id="bebidas"
+        data-aos="zoom-in"
+        data-aos-duration="3000"
+        data-aos-delay="400"
+      >
+        <h2 class="mb-4">Bebidas</h2>
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <div class="card menu-item">
+              <img
+                src="assets/images/refrescos.png"
+                class="card-img-top"
+                alt="refrescos"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Refrescos</h5>
+                <p class="card-text">
+                  Pepsi, Coca Cola, Fanta, Sprite, Pomelo.
+                </p>
+                <p class="card-price"><strong>Precio: $10.99</strong></p>
+                <button
+                  class="btn btn-orange text-white agregar-al-pedido"
+                  data-nombre="refrescos"
+                  data-precio="10.99"
+                >
+                  Agregar al pedido
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card menu-item">
+              <img
+                src="assets/images/agua.png"
+                class="card-img-top"
+                alt="agua"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Agua</h5>
+                <p class="card-text">Agua Mineral Envasada.</p>
+                <p class="card-price"><strong>Precio: $10.99</strong></p>
+                <button
+                  class="btn btn-orange text-white agregar-al-pedido"
+                  data-nombre="agua"
+                  data-precio="10.99"
+                >
+                  Agregar al pedido
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card menu-item">
+              <img
+                src="assets/images/cafe.png"
+                class="card-img-top"
+                alt="cafe"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cafe</h5>
+                <p class="card-text">Café Latte, Mokachino, Negro, Cortado.</p>
+                <p class="card-price"><strong>Precio: $10.99</strong></p>
+                <button
+                  class="btn btn-orange text-white agregar-al-pedido"
+                  data-nombre="cafe"
+                  data-precio="10.99"
+                >
+                  Agregar al pedido
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card menu-item">
+              <img
+                src="assets/images/cerveza.png"
+                class="card-img-top"
+                alt="cervezas"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cervezas</h5>
+                <p class="card-text">Cervezas Tradicionales y Artesanales.</p>
+                <p class="card-price"><strong>Precio: $10.99</strong></p>
+                <button
+                  class="btn btn-orange text-white agregar-al-pedido"
+                  data-nombre="cervezas"
+                  data-precio="10.99"
+                >
+                  Agregar al pedido
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="menu_4" class="container mt-5">
+      <h2 id="menu-title" class="text-center mt-5 mb-5">Menú</h2>
+      <!-- Postres -->
+      <section
+        id="postres"
+        data-aos="zoom-in"
+        data-aos-duration="3000"
+        data-aos-delay="400"
+      >
+        <h2 class="mb-4">Postres</h2>
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <div class="card menu-item">
+              <img
+                src="assets/images/cake.png"
+                class="card-img-top"
+                alt="tarta"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tarta de Chocolate</h5>
+                <p class="card-text">
+                  Deliciosa tarta elaborada con una base de galleta y un relleno
+                  cremoso de chocolate negro.
+                </p>
+                <p class="card-price"><strong>Precio: $10.99</strong></p>
+                <button
+                  class="btn btn-orange text-white agregar-al-pedido"
+                  data-nombre="tarta"
+                  data-precio="10.99"
+                >
+                  Agregar al pedido
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card menu-item">
+              <img
+                src="assets/images/flan.png"
+                class="card-img-top"
+                alt="flan"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Flan de Caramelo</h5>
+                <p class="card-text">
+                  Postre de origen español, hecho a base de huevos, leche y
+                  azúcar, con una capa de caramelo en la parte superior.
+                </p>
+                <p class="card-price"><strong>Precio: $10.99</strong></p>
+                <button
+                  class="btn btn-orange text-white agregar-al-pedido"
+                  data-nombre="flan"
+                  data-precio="10.99"
+                >
+                  Agregar al pedido
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card menu-item">
+              <img
+                src="assets/images/fruit.png"
+                class="card-img-top"
+                alt="mousse"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mousse de Frutas</h5>
+                <p class="card-text">
+                  Ligera y esponjosa, esta mousse se elabora con puré de frutas
+                  frescas y crema batida.
+                </p>
+                <p class="card-price"><strong>Precio: $10.99</strong></p>
+                <button
+                  class="btn btn-orange text-white agregar-al-pedido"
+                  data-nombre="mousse"
+                  data-precio="10.99"
+                >
+                  Agregar al pedido
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card menu-item">
+              <img
+                src="assets/images/tiramisu.png"
+                class="card-img-top"
+                alt="tiramisu"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tiramisú</h5>
+                <p class="card-text">
+                  Postre italiano que combina capas de bizcochos empapados en
+                  café y una mezcla cremosa de mascarpone.
+                </p>
+                <p class="card-price"><strong>Precio: $10.99</strong></p>
+                <button
+                  class="btn btn-orange text-white agregar-al-pedido"
+                  data-nombre="tiramisu"
+                  data-precio="10.99"
+                >
+                  Agregar al pedido
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Modal para agregar al pedido -->
+    <div
+      class="modal fade"
+      id="pedidoModal"
+      tabindex="-1"
+      aria-labelledby="pedidoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pedidoModalLabel">Agregar al Pedido</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h6 id="productoNombre"></h6>
+            <p>Precio: <span id="productoPrecio"></span></p>
+            <input
+              type="number"
+              id="cantidadInput"
+              value="1"
+              min="1"
+              style="width: 60px; margin-bottom: 10px"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button type="button" class="btn btn-primary" id="agregarAlPedido">
+              Agregar al Pedido
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal para ver el pedido -->
+    <div class="modal fade" id="verPedidoModal">
+      tabindex="-1" aria-labelledby="verPedidoModalLabel" aria-hidden="true" >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img
+              src="assets/images/logo.jpg"
+              alt="Logo"
+              style="height: 40px; margin-right: 10px"
+            />
+            <h5 class="modal-title" id="verPedidoModalLabel">
+              Don Remolo | Tu Pedido
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ul id="listaPedido" class="list-group"></ul>
+            <div id="totalPedido" class="mt-3"></div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+        <!-- Renombrar el botón a enviarPedido y asegurarse que esté habilitado -->
+        <button type="button" class="btn btn-primary" id="enviarPedido" disabled onclick="enviarPedidoWhatsApp()">
+          Confirmar Pedido
+        </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contacto -->
+    <section id="contacto" class="container py-1 parallax-section">
+      <div class="row d-flex justify-content-center">
+        <!-- Formulario de contacto -->
+        <div
+          class="col-lg-8 col-md-10 col-12"
+          data-aos="zoom-in"
+          data-aos-duration="3000"
+          data-aos-delay="400"
+        >
+          <form id="contactForm">
+            <div class="text-center mb-4">
+              <h2 class="display-4 fw-bold text-dark">Contáctame</h2>
+              <h4 class="text-dark">
+                ¡Me Encantaría Conocer tus Aportes y Opiniones!
+              </h4>
+            </div>
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="inputName" class="text-dark"
+                    >Nombre y Apellido</label
+                  >
+                  <input
+                    type="text"
+                    id="inputName"
+                    name="nombre"
+                    class="form-control"
+                    placeholder="Ingrese su nombre"
+                    required
+                    pattern="[A-Za-záéíóúñÑ ]+"
+                    oninput="validarNombreApellido(event)"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="inputEmail" class="text-dark">Email</label>
+                  <input
+                    type="email"
+                    id="inputEmail"
+                    name="email"
+                    class="form-control"
+                    required
+                    placeholder="Ingrese su email"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="inputPhone" class="text-dark">Teléfono</label>
+                  <input
+                    type="tel"
+                    id="inputPhone"
+                    name="telefono"
+                    class="form-control"
+                    required
+                    pattern="^\+?[0-9]{7,15}$"
+                    placeholder="Ingrese su teléfono"
+                  />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="inputMessage" class="text-dark">Mensaje</label>
+                  <textarea
+                    id="inputMessage"
+                    name="mensaje"
+                    class="form-control"
+                    required
+                    placeholder="Ingrese su mensaje"
+                    rows="3"
+                  ></textarea>
+                </div>
+              </div>
+              <div
+                class="col-12 d-flex justify-content-between align-items-center mt-3"
+              >
+                <button
+                  type="submit"
+                  class="btn btn-orange text-white mt-3 btn-proyectos"
+                >
+                  Enviar Mensaje
+                </button>
+                <a
+                  href="https://wa.me/1133649070"
+                  target="_blank"
+                  class="ms-auto"
+                >
+                  <img
+                    src="assets/icons/ws.png"
+                    alt="WhatsApp"
+                    width="50"
+                    height="50"
+                    id="icon-ws"
+                  />
+                </a>
+              </div>
+            </div>
+          </form>
+          <!-- Fin Formulario de contacto -->
+          <a href="#hero" class="btn btn-orange mt-3 text-white text-center"
+            >Ir al Inicio</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Contacto</h5>
+            <p>Dirección: Calle Principal 123, Ciudad</p>
+            <p>Teléfono: (123) 456-7890</p>
+            <p>Email: info@donremolo.com</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Horarios</h5>
+            <p>Lunes a Viernes: 11:00 AM - 10:00 PM</p>
+            <p>Sábados y Domingos: 12:00 PM - 11:00 PM</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Síguenos</h5>
+            <a href="#" class="me-2"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#" class="me-2"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+      AOS.init();
+
+      // Alternar el modo oscuro y guardar el estado en localStorage
+      document.getElementById("darkModeToggle").addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+
+        // Guarda la preferencia del usuario
+        if (document.body.classList.contains("dark-mode")) {
+          localStorage.setItem("darkMode", "enabled");
+        } else {
+          localStorage.setItem("darkMode", "disabled");
+        }
+      });
+
+      // Mantener la preferencia al recargar la página
+      if (localStorage.getItem("darkMode") === "enabled") {
+        document.body.classList.add("dark-mode");
+      }
+
+    // Gestion de Pedidos
+      let pedido = [];
+
+      // Agregra pedido
+      document.querySelectorAll(".agregar-al-pedido").forEach((button) => {
+        button.addEventListener("click", function () {
+          const nombre = this.getAttribute("data-nombre");
+          const precio = parseFloat(this.getAttribute("data-precio"));
+
+          // Mostrar el nombre y precio del producto en el modal
+          document.getElementById("productoNombre").textContent = nombre;
+          document.getElementById(
+            "productoPrecio"
+          ).textContent = `$${precio.toFixed(2)}`;
+
+          // Abrir el modal
+          const cantidadInput = document.getElementById("cantidadInput");
+          cantidadInput.value = 1; // Reiniciar a 1 cada vez que se abre el modal
+
+          const pedidoModal = new bootstrap.Modal(
+            document.getElementById("pedidoModal")
+          );
+          pedidoModal.show();
+
+          // Al hacer clic en "Agregar al Pedido" dentro del modal
+          document.getElementById("agregarAlPedido").onclick = function () {
+            const cantidad = parseInt(cantidadInput.value);
+            if (cantidad > 0) {
+              pedido.push({ nombre, precio, cantidad });
+              actualizarPedido();
+              pedidoModal.hide(); // Cerrar el modal
+            } else {
+              alert("Por favor, ingrese una cantidad válida.");
+            }
+          };
+        });
+      });
+
+      // Actualizar Pedido
+      function actualizarPedido() {
+        const listaPedido = document.getElementById("listaPedido");
+        listaPedido.innerHTML = "";
+        let total = 0;
+
+        pedido.forEach((item) => {
+          const totalItem = item.precio * item.cantidad;
+          total += totalItem;
+          const li = document.createElement("li");
+          li.className = "list-group-item";
+          li.textContent = `${item.cantidad} x ${item.nombre} - $${totalItem.toFixed(2)}`;
+          listaPedido.appendChild(li);
+        });
+
+        document.getElementById("totalPedido").textContent = `Total: $${total.toFixed(2)}`;
+
+        // Habilitar/Deshabilitar botón de enviar pedido según si hay elementos en el pedido
+        document.getElementById("enviarPedido").disabled = pedido.length === 0;
+      }
+
+
+      // Ver pedido
+      document
+        .getElementById("verPedido")
+        .addEventListener("click", function () {
+          const verPedidoModal = new bootstrap.Modal(
+            document.getElementById("verPedidoModal") // Cambiado aquí
+          );
+          verPedidoModal.show();
+          actualizarPedido();
+        });
+
+      // Enviar Pedido por Whatsapp
+      function enviarPedidoWhatsApp() {
+        let mensaje = "Hola, quiero realizar el siguiente pedido:\n";
+        let total = 0;
+
+        pedido.forEach((item) => {
+          mensaje += `${item.cantidad} x ${item.nombre} - $${(
+            item.precio * item.cantidad
+          ).toFixed(2)}\n`;
+          total += item.precio * item.cantidad;
+        });
+
+        mensaje += `\nTotal: $${total.toFixed(
+          2
+        )}\nPago en efectivo y con delivery propio del negocio.`;
+
+        const numeroWhatsApp = "1234567890"; // Reemplaza con el número de WhatsApp del local
+        const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(
+          mensaje
+        )}`;
+
+        window.open(url, "_blank");
+        
+      }
+
+      // Validaciones de Formulario
+      function validarNombreApellido(event) {
+        const regex = /^[A-Za-záéíóúñÑ ]+$/;
+        if (!regex.test(event.target.value)) {
+          event.target.setCustomValidity(
+            "Solo se permiten letras en este campo"
+          );
+          alert("Por favor, ingrese solo letras en el campo de Nombre.");
+        } else {
+          event.target.setCustomValidity("");
+        }
+      }
+
+      document
+        .getElementById("inputPhone")
+        .addEventListener("input", function (e) {
+          if (!/^[0-9]*$/.test(e.target.value)) {
+            e.target.value = e.target.value.replace(/[^0-9]/g, "");
+            alert("Por favor, ingrese solo números en el campo de Teléfono.");
+          }
+        });
+
+      document.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.ctrlKey && (event.key === "u" || event.key === "U")) {
+          event.preventDefault();
+        }
+      });
+    </script>
+    <!-- Incluir el script de EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      (function () {
+        // Reemplaza "tu_user_id" con tu User ID de EmailJS
+        emailjs.init("ZFNa8J5Ckf-Cv-kv1");
+      })();
+    </script>
+
+    <!-- Configurar el envío del formulario -->
+    <script type="text/javascript">
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const form = this; // Guardar referencia al formulario
+
+          emailjs.sendForm("service_hc1g5ck", "template_omfi5rs", this).then(
+            function () {
+              console.log("Mensaje Enviado con Éxito!");
+              alert("Mensaje Enviado con Éxito");
+
+              // Limpiar el formulario después de enviarlo con éxito
+              form.reset();
+            },
+            function (error) {
+              console.log("Error al Enviar el Mensaje", error);
+              alert("Error al Enviar el Mensaje");
+            }
+          );
+        });
+    </script>
+  </body>
+</html>
